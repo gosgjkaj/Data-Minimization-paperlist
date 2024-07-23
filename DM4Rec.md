@@ -1,5 +1,40 @@
-## Data Minimization for Recommender System
-- [Operationalizing the Legal Principle of Data Minimization for Personalization](https://arxiv.org/abs/2005.13718)
-- [Dataset condensation for recommendation](https://arxiv.org/abs/2310.01038)
-- [Leveraging Large Language Models LLMs to Empower TrainingFree Dataset Condensation for ContentBased Recommendation](https://arxiv.org/abs/2310.09874)
-- [Data-efficient Fine-tuning for LLM-based Recommendation](https://arxiv.org/abs/2401.17197)
+# Data Minimization for Recommender System 
+
+<!-- no toc -->
+- [Operationalizing the Legal Principle of Data Minimization for Personalization](#1)
+- [Dataset condensation for recommendation](#2)
+- [Leveraging Large Language Models LLMs to Empower TrainingFree Dataset Condensation for ContentBased Recommendation](#3)
+- [Data-efficient Fine-tuning for LLM-based Recommendation](#4)
+
+---
+
+### <span id="1">Operationalizing the Legal Principle of Data Minimization for Personalization</span>
+[link to this paper](https://arxiv.org/abs/2005.13718)
+
+**Authors:** Asia J. Biega, Peter Potash, Hal Daumé III, Fernando Diaz, Michèle Finck
+
+Article 5(1)(c) of the European Union's General Data Protection Regulation (GDPR) requires that "personal data shall be [...] adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed ('data minimisation')". To date, the legal and computational definitions of 'purpose limitation' and `data minimization' remain largely unclear. In particular, the interpretation of these principles is an open issue for information access systems that optimize for user experience through personalization and do not strictly require personal data collection for the delivery of basic service.
+In this paper, we identify a lack of a homogeneous interpretation of the data minimization principle and explore two operational definitions applicable in the context of personalization. The focus of our empirical study in the domain of recommender systems is on providing foundational insights about the (i) feasibility of different data minimization definitions, (ii) robustness of different recommendation algorithms to minimization, and (iii) performance of different minimization strategies.We find that the performance decrease incurred by data minimization might not be substantial, but that it might disparately impact different users---a finding which has implications for the viability of different formal minimization definitions. Overall, our analysis uncovers the complexities of the data minimization problem in the context of personalization and maps the remaining computational and regulatory challenges.
+
+### <span id="2">Dataset condensation for recommendation</span>
+[link to this paper](https://arxiv.org/abs/2310.01038)
+
+**Authors:** Jiahao Wu, Wenqi Fan, Shengcai Liu, Qijiong Liu, Rui He, Qing Li, Ke Tang
+
+Training recommendation models on large datasets often requires significant time and computational resources. Consequently, an emergent imperative has arisen to construct informative, smaller-scale datasets for efficiently training. Dataset compression techniques explored in other domains show potential possibility to address this problem, via sampling a subset or synthesizing a small dataset. However, applying existing approaches to condense recommendation datasets is impractical due to following challenges: (i) sampling-based methods are inadequate in addressing the long-tailed distribution problem; (ii) synthesizing-based methods are not applicable due to discreteness of interactions and large size of recommendation datasets; (iii) neither of them fail to address the specific issue in recommendation of false negative items, where items with potential user interest are incorrectly sampled as negatives owing to insufficient exposure.
+To bridge this gap, we investigate dataset condensation for recommendation, where discrete interactions are continualized with probabilistic re-parameterization. To avoid catastrophically expensive computations, we adopt a one-step update strategy for inner model training and introducing policy gradient estimation for outer dataset synthesis. To mitigate amplification of long-tailed problem, we compensate long-tailed users in the condensed dataset. Furthermore, we propose to utilize a proxy model to identify false negative items. Theoretical analysis regarding the convergence property is provided. Extensive experiments on multiple datasets demonstrate the efficacy of our method. In particular, we reduce the dataset size by 75% while approximating over 98% of the original performance on Dianping and over 90% on other datasets.
+
+### <span id="3">Leveraging Large Language Models LLMs to Empower TrainingFree Dataset Condensation for ContentBased Recommendation</span>
+[link to this paper](https://arxiv.org/abs/2310.09874)
+
+**Authors:** Jiahao Wu, Qijiong Liu, Hengchang Hu, Wenqi Fan, Shengcai Liu, Qing Li, Xiao-Ming Wu, Ke Tang
+
+Modern techniques in Content-based Recommendation (CBR) leverage item content information to provide personalized services to users, but suffer from resource-intensive training on large datasets. To address this issue, we explore the dataset condensation for textual CBR in this paper. The goal of dataset condensation is to synthesize a small yet informative dataset, upon which models can achieve performance comparable to those trained on large datasets. While existing condensation approaches are tailored to classification tasks for continuous data like images or embeddings, direct application of them to CBR has limitations. To bridge this gap, we investigate efficient dataset condensation for content-based recommendation. Inspired by the remarkable abilities of large language models (LLMs) in text comprehension and generation, we leverage LLMs to empower the generation of textual content during condensation. To handle the interaction data involving both users and items, we devise a dual-level condensation method: content-level and user-level. At content-level, we utilize LLMs to condense all contents of an item into a new informative title. At user-level, we design a clustering-based synthesis module, where we first utilize LLMs to extract user interests. Then, the user interests and user embeddings are incorporated to condense users and generate interactions for condensed users. Notably, the condensation paradigm of this method is forward and free from iterative optimization on the synthesized dataset. Extensive empirical findings from our study, conducted on three authentic datasets, substantiate the efficacy of the proposed method. Particularly, we are able to approximate up to 97% of the original performance while reducing the dataset size by 95% (i.e., on dataset MIND).
+
+### <span id="4">Data-efficient Fine-tuning for LLM-based Recommendation</span>
+[link to this paper](https://arxiv.org/abs/2401.17197)
+
+**Authors:** Xinyu Lin, Wenjie Wang, Yongqi Li, Shuo Yang, Fuli Feng, Yinwei Wei, Tat-Seng Chua
+
+Leveraging Large Language Models (LLMs) for recommendation has recently garnered considerable attention, where fine-tuning plays a key role in LLMs' adaptation. However, the cost of fine-tuning LLMs on rapidly expanding recommendation data limits their practical application. To address this challenge, few-shot fine-tuning offers a promising approach to quickly adapt LLMs to new recommendation data. We propose the task of data pruning for efficient LLM-based recommendation, aimed at identifying representative samples tailored for LLMs' few-shot fine-tuning. While coreset selection is closely related to the proposed task, existing coreset selection methods often rely on suboptimal heuristic metrics or entail costly optimization on large-scale recommendation data.
+To tackle these issues, we introduce two objectives for the data pruning task in the context of LLM-based recommendation: 1) high accuracy aims to identify the influential samples that can lead to high overall performance; and 2) high efficiency underlines the low costs of the data pruning process. To pursue the two objectives, we propose a novel data pruning method based on two scores, i.e., influence score and effort score, to efficiently identify the influential samples. Particularly, the influence score is introduced to accurately estimate the influence of sample removal on the overall performance. To achieve low costs of the data pruning process, we use a small-sized surrogate model to replace LLMs to obtain the influence score. Considering the potential gap between the surrogate model and LLMs, we further propose an effort score to prioritize some hard samples specifically for LLMs. Empirical results on three real-world datasets validate the effectiveness of our proposed method. In particular, the proposed method uses only 2% samples to surpass the full data fine-tuning, reducing time costs by 97%.
