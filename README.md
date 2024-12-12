@@ -25,7 +25,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">Dataset condensation for recommendation (Condensing Pre-augmented Recommendation Data via Lightweight Policy Gradient Estimation)</td>
       <td align="center">-</td>
@@ -35,7 +35,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">Data-efficient Fine-tuning for LLM-based Recommendation</td>
       <td align="center">Influence function</td>
@@ -45,7 +45,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">Data Minimization for GDPR Compliance in  Machine Learning Models</td>
       <td align="center">-</td>
@@ -55,7 +55,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">The Data Minimization Principle in Machine Learning</td>
       <td align="center">-</td>
@@ -65,7 +65,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">The trade-off between data minimization and fairness in collaborative filtering</td>
       <td align="center">-</td>
@@ -75,7 +75,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">Learning to Limit Data Collection via Scaling Laws: A Computational Interpretation for the Legal Principle of Data Minimization</td>
       <td align="center">-</td>
@@ -85,7 +85,7 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
+    <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">“I’m not convinced that they don’t collect more than is necessary”:  User-Controlled Data Minimization Design in Search Engines</td>
       <td align="center">-</td>
@@ -95,8 +95,37 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
-    <!-- This is on paper, follow this format -->
-
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Leveraging Uncertainty Quantification for Reducing Data for Recommender Systems</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://ieeexplore.ieee.org/document/10386790">
+        BigData 2023
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">I Prefer Not To Say: Protecting User Consent in Models with Optional Personal Data</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2210.13954">
+        AAAI 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Exploring Recommendations Under User-Controlled Data Filtering</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3240323.3240399">
+        RecSys 2018
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
 
   </tbody>
 </table>
@@ -122,7 +151,7 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <tr>
       <td align="left">Graph Unlearning</td>
-      <td align="center">Unlearning in graph</td>
+      <td align="center">Apply Unlearning on Graph</td>
       <td align="center">
         <a href="https://dl.acm.org/doi/10.1145/3548606.3559352">
           CCS 2022
@@ -131,7 +160,7 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <tr>
       <td align="left">Recommendation Unlearning</td>
-      <td align="center">Unlearning in Rec </td>
+      <td align="center">Further apply Unlearning in Rec</td>
       <td align="center">
         <a href="https://arxiv.org/abs/2201.06820">
           WWW 2022
@@ -158,7 +187,7 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <tr>
       <td align="left">CURE4Rec: A Benchmark for Recommendation Unlearning with Deeper Influence</td>
-      <td align="center">Benchmark</td>
+      <td align="center">4 Benchmarks</td>
       <td align="center">
         <a href="https://arxiv.org/abs/2408.14393">
           NIPS 2024
@@ -210,6 +239,67 @@ To see more details about each paper, click on the class title for a closer look
         </a>
       </td>
     </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Machine Unlearning: Solutions and Challenges</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://ieeexplore.ieee.org/document/10488864">
+        TETCI 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Machine Unlearning: A Survey</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3603620">
+        CSUR 2023
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Machine Unlearning: A Comprehensive Survey</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3603620">
+        Arxiv 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Machine Unlearning Doesn't Do What You Think: Lessons for Generative AI Policy, Research, and Practice</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2412.06966v1">
+        ICML 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">A Survey of Machine Unlearning</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2209.02299">
+        Arxiv 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Machine Unlearning: Taxonomy, Metrics, Applications, Challenges, and Prospects</td>
+      <td align="center">Good graph, comparison with other surveys</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2403.08254">
+        Arxiv 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
     <!-- End of updated paper list -->
   </tbody>
 </table>
