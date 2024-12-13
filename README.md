@@ -1,13 +1,16 @@
 # Recommendation Privacy : A Survey About Data Minimization and Unlearning in Recommendation Systems
 
-In this repository, we collect papers for Recommendation Privacy, specificlly **Data minimization** and **Unlearning**
-To see more details about each paper, click on the class title for a closer look.
+In this repository, we introduce some of the least reaserch paper highlighting the topic of Recommendation Privacy, specificlly **Data minimization** and **Unlearning**. We primarily gather papers related to recommendation systems, which are the main focus of our research. However, to broaden the scope of knowledge, we also include relevant papers from other domains or algorithms, categorized under each subsection.
 
+The concept of Data Minimization and Unlearning came from the following regulations:
 - [GDPR](https://gdpr-info.eu/)
 - [CCPA](https://oag.ca.gov/privacy/ccpa/regs)
 
-## Data Minimization for Recommender System
+## Data Minimization
 
+**Keywords:** Dataset Distillation, Coreset Selection, Dataset Pruning 
+
+### DM4Rec
 <table>
   <tbody>
     <tr>
@@ -18,7 +21,7 @@ To see more details about each paper, click on the class title for a closer look
     <!-- Paper list start here -->
     <tr>
       <td align="left">Operationalizing the Legal Principle of Data Minimization for Personalization</td>
-      <td align="center">Basline</td>
+      <td align="center">Baseline, one of the first paper about DM4Rec</td>
       <td align="center">
         <a href="https://arxiv.org/abs/2005.13718">
           WWW 2022
@@ -38,7 +41,7 @@ To see more details about each paper, click on the class title for a closer look
     <!-- This is one paper, follow this format -->
     <tr>
       <td align="left">Data-efficient Fine-tuning for LLM-based Recommendation</td>
-      <td align="center">Influence function</td>
+      <td align="center">LLM, Influence function</td>
       <td align="center">
         <a href="https://arxiv.org/abs/2401.17197">
         SIGIR 2024
@@ -47,21 +50,144 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <!-- This is one paper, follow this format -->
     <tr>
-      <td align="left">Data Minimization for GDPR Compliance in  Machine Learning Models</td>
+      <td align="left">The trade-off between data minimization and fairness in collaborative filtering</td>
       <td align="center">-</td>
       <td align="center">
-        <a href="https://link.springer.com/article/10.1007/s43681-021-00095-8">
-        AI & Ethics 2021
+        <a href="https://arxiv.org/abs/2410.07182">
+        Arxiv 2024
         </a>
       </td>
     </tr>
     <!-- This is one paper, follow this format -->
     <tr>
-      <td align="left">The Data Minimization Principle in Machine Learning</td>
+      <td align="left">Exploring Recommendations Under User-Controlled Data Filtering</td>
       <td align="center">-</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3240323.3240399">
+        RecSys 2018
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Privacy-Preserving Synthetic Data Generation for Recommendation Systems</td>
+      <td align="center">Generates new items to replace the original interactions</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3477495.3532044">
+        SIGIR 2022
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Leveraging Uncertainty Quantification for Reducing Data for Recommender Systems</td>
+      <td align="center">Introducing uncertainty</td>
+      <td align="center">
+        <a href="https://ieeexplore.ieee.org/document/10386790">
+        BigData 2023
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Dataset Regeneration for Sequential Recommendation</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3637528.3671841">
+        KDD 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+  </tbody>
+</table>
+
+### DM4ML
+
+<table>
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th align="center">Comments</th>
+      <th align="center">Link</th>
+    </tr>
+    <!-- Paper list start here -->
+    <tr>
+      <td align="left">The Data Minimization Principle in Machine Learning</td>
+      <td align="center">Bi-level optimization</td>
       <td align="center">
         <a href="https://arxiv.org/abs/2405.19471">
         Arxiv 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Coverage-Centric Corest Selection For High Pruning Rates</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2210.15809">
+        ICLR 2023
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Deep Learning on a Data Diet: Finding Important Examples Early in Training</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2107.07075">
+        NIPS 2021
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">I Prefer Not To Say: Protecting User Consent in Models with Optional Personal Data</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2210.13954">
+        AAAI 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Large-scale Dataset Pruning with Dynamic Uncertainty</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2306.05175">
+        CVPR 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Selection Via Proxy: Efficient Data Selection For Deep Learning</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/1906.11829">
+        ICLR 2020
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">Privacy for Free: How does Dataset Condensation Help Privacy?</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2206.00240">
+        ICML 2022
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
+      <td align="left">No Free Lunch in “Privacy for Free: How does Dataset  Condensation Help Privacy”</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2209.14987">
+        Arxiv 2022
         </a>
       </td>
     </tr>
@@ -87,6 +213,16 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <!-- This is one paper, follow this format -->
     <tr>
+      <td align="left">Distill Gold from Massive Ores: Efficient Dataset Distillation via Critical Samples Selection</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2305.18381">
+        ECCV 2024
+        </a>
+      </td>
+    </tr>
+    <!-- This is one paper, follow this format -->
+    <tr>
       <td align="left">“I’m not convinced that they don’t collect more than is necessary”:  User-Controlled Data Minimization Design in Search Engines</td>
       <td align="center">-</td>
       <td align="center">
@@ -97,40 +233,31 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <!-- This is one paper, follow this format -->
     <tr>
-      <td align="left">Leveraging Uncertainty Quantification for Reducing Data for Recommender Systems</td>
+      <td align="left">Data Distillation: A Survey</td>
       <td align="center">-</td>
       <td align="center">
-        <a href="https://ieeexplore.ieee.org/document/10386790">
-        BigData 2023
+        <a href="https://arxiv.org/abs/2301.04272">
+        TMLR 2023
         </a>
       </td>
     </tr>
     <!-- This is one paper, follow this format -->
     <tr>
-      <td align="left">I Prefer Not To Say: Protecting User Consent in Models with Optional Personal Data</td>
+      <td align="left">Data Minimization for GDPR Compliance in  Machine Learning Models</td>
       <td align="center">-</td>
       <td align="center">
-        <a href="https://arxiv.org/abs/2210.13954">
-        AAAI 2024
+        <a href="https://link.springer.com/article/10.1007/s43681-021-00095-8">
+        AI & Ethics 2021
         </a>
       </td>
     </tr>
     <!-- This is one paper, follow this format -->
-    <tr>
-      <td align="left">Exploring Recommendations Under User-Controlled Data Filtering</td>
-      <td align="center">-</td>
-      <td align="center">
-        <a href="https://dl.acm.org/doi/10.1145/3240323.3240399">
-        RecSys 2018
-        </a>
-      </td>
-    </tr>
-    <!-- This is one paper, follow this format -->
-
   </tbody>
 </table>
 
-## Unlearning for Recommender System
+## Unlearning
+
+### Unlearn4Rec
 
 <table>
   <tbody>
@@ -141,24 +268,6 @@ To see more details about each paper, click on the class title for a closer look
     </tr>
     <!-- Updated paper list with comments -->
     <tr>
-      <td align="left">Machine Unlearning</td>
-      <td align="center">Foundational approach</td>
-      <td align="center">
-        <a href="https://arxiv.org/abs/1912.03817">
-          TCSP 2021
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td align="left">Graph Unlearning</td>
-      <td align="center">Apply Unlearning on Graph</td>
-      <td align="center">
-        <a href="https://dl.acm.org/doi/10.1145/3548606.3559352">
-          CCS 2022
-        </a>
-      </td>
-    </tr>
-    <tr>
       <td align="left">Recommendation Unlearning</td>
       <td align="center">Further apply Unlearning in Rec</td>
       <td align="center">
@@ -168,37 +277,10 @@ To see more details about each paper, click on the class title for a closer look
       </td>
     </tr>
     <tr>
-      <td align="left">Fast Machine Unlearning Without Retraining Through Selective Synaptic Dampening</td>
-      <td align="center">-</td>
-      <td align="center">
-        <a href="https://arxiv.org/abs/2308.07707">
-          AAAI 2024
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td align="left">What makes unlearning hard and what to do about it</td>
-      <td align="center">-</td>
-      <td align="center">
-        <a href="https://arxiv.org/abs/2406.01257">
-          NIPS 2024
-        </a>
-      </td>
-    </tr>
-    <tr>
       <td align="left">CURE4Rec: A Benchmark for Recommendation Unlearning with Deeper Influence</td>
       <td align="center">4 Benchmarks</td>
       <td align="center">
         <a href="https://arxiv.org/abs/2408.14393">
-          NIPS 2024
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td align="left">Scalability of memorization-based machine unlearning</td>
-      <td align="center">-</td>
-      <td align="center">
-        <a href="https://arxiv.org/abs/2410.16516">
           NIPS 2024
         </a>
       </td>
@@ -240,6 +322,65 @@ To see more details about each paper, click on the class title for a closer look
       </td>
     </tr>
     <!-- This is one paper, follow this format -->
+    <!-- End of updated paper list -->
+  </tbody>
+</table>
+
+### Unlearn4ML
+
+<table>
+  <tbody>
+    <tr>
+      <th>Title</th>
+      <th align="center">Comments</th>
+      <th align="center">Link</th>
+    </tr>
+    <!-- Updated paper list with comments -->
+    <tr>
+      <td align="left">Machine Unlearning</td>
+      <td align="center">Foundational approach</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/1912.03817">
+          TCSP 2021
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">Graph Unlearning</td>
+      <td align="center">Apply Unlearning on Graph</td>
+      <td align="center">
+        <a href="https://dl.acm.org/doi/10.1145/3548606.3559352">
+          CCS 2022
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">Fast Machine Unlearning Without Retraining Through Selective Synaptic Dampening</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2308.07707">
+          AAAI 2024
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">What makes unlearning hard and what to do about it</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2406.01257">
+          NIPS 2024
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">Scalability of memorization-based machine unlearning</td>
+      <td align="center">-</td>
+      <td align="center">
+        <a href="https://arxiv.org/abs/2410.16516">
+          NIPS 2024
+        </a>
+      </td>
+    </tr>
     <tr>
       <td align="left">Machine Unlearning: Solutions and Challenges</td>
       <td align="center">-</td>
